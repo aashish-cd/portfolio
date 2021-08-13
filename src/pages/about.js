@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { profileData, socialMedia, resumeData } from '../data/profile';
+import { resumeData } from '../data/profile';
 
 const About = () => {
   const [index, setIndex] = useState(0);

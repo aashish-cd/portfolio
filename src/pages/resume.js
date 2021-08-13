@@ -1,6 +1,5 @@
 import React from 'react';
-import { socialMedia, resumeData } from '../data/profile';
-import image from '../profile.jpg';
+import { resumeData } from '../data/profile';
 
 const Resume = () => {
   return (

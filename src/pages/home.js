@@ -1,5 +1,5 @@
 import React from 'react';
-import { profileData, socialMedia } from '../data/profile';
+import { profileData } from '../data/profile';
 
 const Home = () => {
   return (
