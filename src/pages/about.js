@@ -16,7 +16,7 @@ const About = () => {
   }, [index]);
   return (
     <>
-      <div className='position-relative'>
+      <div className='position-relative '>
         <div className='d-flex flex-row justify-content-center  '>
           <div
             className='d-flex flex-row flex-glow w-100 '
@@ -45,16 +45,18 @@ const About = () => {
                 background: '#444',
               }}
             >
-              <img
-                src={resumeData[index]?.image}
-                alt={resumeData[index]?.job}
-                className='img img-thumbnail rounded-circle'
-              />
+              <div className='d-flex flex-row '>
+                {resumeData[index]?.logo?.map((bx) => (
+                  <i className={`${bx}`} style={{ fontSize: '100px' }}></i>
+                ))}
+              </div>
+              {/* <i class={resumeData[index]?.logo}></i> */}
               <h1 className=''>{resumeData[index]?.job}</h1>
               <p className=''>{resumeData[index]?.workplace}</p>
               <p className='bg-blue shadow-lg duration'>
                 {resumeData[index]?.duration}
               </p>
+              <p>{resumeData[index]?.description}</p>
             </div>
             <i
               class='bx bx-right-arrow ml-5'

@@ -70,8 +70,7 @@ export const socialMedia = [
 export const resumeData = [
   {
     id: 1,
-    image:
-      'https://i0.wp.com/www.studentsnepal.com/wp-content/uploads/avatars/32590/5ebfb9fd303ff-bpfull.jpg?resize=300%2C300&ssl=1',
+    logo: ['bx bxl-javascript', 'bx bxl-html5', 'bx bxl-css3'],
     job: 'Web Developer',
     workplace: 'Ace Studios',
     duration: '2019 - 2021 (present)',
@@ -80,9 +79,26 @@ export const resumeData = [
   },
   {
     id: 2,
-    image:
-      'https://i0.wp.com/www.studentsnepal.com/wp-content/uploads/avatars/32590/5ebfb9fd303ff-bpfull.jpg?resize=300%2C300&ssl=1',
+    logo: ['bx bxl-react'],
     job: 'React Developer',
+    workplace: 'AS Sys',
+    duration: '2021 - present',
+    description: 'Junior React Developer at AS Sys',
+    skill: ['Javascript', 'HTML', 'React.js', 'Node.js', 'MongoDB'],
+  },
+  {
+    id: 2,
+    logo: ['bx bxl-react'],
+    job: 'React Deloper',
+    workplace: 'AS Sys',
+    duration: '2021 - present',
+    description: 'Junior React Developer at AS Sys',
+    skill: ['Javascript', 'HTML', 'React.js', 'Node.js', 'MongoDB'],
+  },
+  {
+    id: 2,
+    logo: ['bx bxl-react'],
+    job: 'Reveloper',
     workplace: 'AS Sys',
     duration: '2021 - present',
     description: 'Junior React Developer at AS Sys',

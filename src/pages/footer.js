@@ -3,7 +3,7 @@ import { socialMedia } from '../data/profile';
 const Footer = () => {
   return (
     <>
-      <div className='d-flex flex-row fixed-bottom  justify-content-center'>
+      <div className='d-flex flex-row fixed-bottom bg-dark  justify-content-center'>
         {socialMedia.map((social) => {
           return (
             <div key={social.id} className='d-flex flex-row m-4 p-2 '>
