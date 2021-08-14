@@ -16,7 +16,7 @@ const About = () => {
   }, [index]);
   return (
     <>
-      <div className='position-relative '>
+      <div className='position-relative container'>
         <div className='d-flex flex-row justify-content-center  '>
           <div
             className='d-flex flex-row flex-glow w-100 '

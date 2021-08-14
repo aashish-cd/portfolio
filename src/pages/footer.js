@@ -6,7 +6,7 @@ const Footer = () => {
       <div className='d-flex flex-row fixed-bottom bg-dark  justify-content-center'>
         {socialMedia.map((social) => {
           return (
-            <div key={social.id} className='d-flex flex-row m-4 p-2 '>
+            <div key={social.id} className='d-flex flex-row m-2 '>
               <a href={social.link}>
                 <i
                   className={social.iconClass}

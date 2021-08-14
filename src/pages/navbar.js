@@ -4,45 +4,47 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
-      <nav className='navbar navbar-expand-lg navbar-light bg-dark sticky-top justify-content-end pl-n5 pr-5 shadow-lg  '>
+      <nav className='navbar navbar-expand-lg navbar-light bg-dark sticky-top   shadow-lg  '>
         <i
-          className='bx bxl-react'
+          className='bx bxl-react justify-content-left'
           style={{
-            position: 'fixed',
-            right: '0',
-            left: '30px',
             fontSize: '3rem',
             zIndex: '1',
           }}
         ></i>
-        <Link
-          className='btn btn-secondary p-2 m-4'
-          style={{
-            zIndex: '10',
-          }}
-          to='/'
-        >
-          Home
-        </Link>
-        <Link
-          style={{
-            zIndex: '10',
-          }}
-          className='btn btn-secondary p-2 m-4'
-          to='/about'
-        >
-          About
-        </Link>
 
-        <Link
-          style={{
-            zIndex: '10',
-          }}
-          className='btn btn-secondary p-2 m-4'
-          to='/resume'
-        >
-          Resume
-        </Link>
+        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+          <ul className='navbar-nav'>
+            <Link
+              className='btn btn-secondary p-1 m-4 nav-item'
+              style={{
+                zIndex: '10',
+              }}
+              to='/'
+            >
+              Home
+            </Link>
+            <Link
+              style={{
+                zIndex: '10',
+              }}
+              className='btn btn-secondary p-1 m-4  nav-item'
+              to='/about'
+            >
+              About
+            </Link>
+
+            <Link
+              style={{
+                zIndex: '10',
+              }}
+              className='btn btn-secondary p-1 m-4  nav-item'
+              to='/resume'
+            >
+              Resume
+            </Link>
+          </ul>
+        </div>
       </nav>
     </>
   );

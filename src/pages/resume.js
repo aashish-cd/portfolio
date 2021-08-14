@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <>
       <div
-        className='d-flex flex-column flex-glow w-100 '
+        className='d-flex flex-column flex-glow w-100 container '
         style={{
           justifyContent: 'center',
           alignContent: 'center',
@@ -15,7 +15,7 @@ const Resume = () => {
         {resumeData.map((data) => {
           return (
             <div
-              className='d-flex  flex-column  p-5 m-5 rounded shadow-lg p-3 mb-5 bg-dark rounded'
+              className=' d-flex  flex-column  p-5 m-5 rounded shadow-lg p-3 mb-5 bg-dark rounded'
               style={{
                 width: '40vw',
                 height: '30vw',

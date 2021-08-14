@@ -11,10 +11,11 @@ const Home = () => {
           height: '20vw',
         }}
       >
-        <div className='m-3 p-3'>
+        <div className='row m-3 p-3'>
           <h1
+            className='h1'
             style={{
-              fontSize: '80px',
+              fontSize: '5rem',
             }}
           >
             {profileData[0].title}
