@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { resumeData } from '../data/profile';
-import {
-  CssBaseline,
-  Container,
-  Grid,
-  Typography,
-  Button,
-} from '@material-ui/core';
+import { Container, Grid, Typography, Button } from '@material-ui/core';
 
 const About = () => {
   const [index, setIndex] = useState(0);

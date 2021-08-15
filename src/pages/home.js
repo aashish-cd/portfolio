@@ -1,4 +1,4 @@
-import { Container, Typography, CssBaseline } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
 import React from 'react';
 import { profileData } from '../data/profile';
 
