@@ -56,9 +56,7 @@ const About = () => {
               >
                 {resumeData[index]?.duration}
               </Typography>
-              <Typography variant='h6' align='center'>
-                {resumeData[index]?.description}
-              </Typography>
+             
               <div align='center'>
                 <Link to={`/about/${resumeData[index]?.id}`} align='center'>
                   <Button variant='outlined' color='primary'>
