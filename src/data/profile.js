@@ -87,7 +87,7 @@ export const resumeData = [
     skill: ['Javascript', 'HTML', 'React.js', 'Node.js', 'MongoDB'],
   },
   {
-    id: 2,
+    id: 3,
     logo: ['bx bxl-react'],
     job: 'React Deloper',
     workplace: 'AS Sys',
@@ -96,7 +96,7 @@ export const resumeData = [
     skill: ['Javascript', 'HTML', 'React.js', 'Node.js', 'MongoDB'],
   },
   {
-    id: 2,
+    id: 4,
     logo: ['bx bxl-react'],
     job: 'Reveloper',
     workplace: 'AS Sys',

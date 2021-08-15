@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { resumeData } from '../data/profile';
+import {
+  CssBaseline,
+  Container,
+  Grid,
+  Typography,
+  Button,
+} from '@material-ui/core';
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -11,14 +20,15 @@ const About = () => {
     if (index < 0) {
       setIndex(resumeData.length - 1);
     }
-    console.log('hello');
+
     return () => {};
   }, [index]);
   return (
     <>
-      <div className='position-relative container'>
-        <div className='d-flex flex-row justify-content-center  '>
-          <div
+      <Container maxWidth='sm' className='bg-dark p-4 justify-content-center'>
+        <Grid container>
+          <Grid
+            item
             className='d-flex flex-row flex-glow w-100 '
             style={{
               justifyContent: 'center',
@@ -27,48 +37,54 @@ const About = () => {
             }}
           >
             <i
-              class='bx bx-left-arrow mr-5'
+              class='bx bx-left-arrow '
               style={{
                 fontSize: '48px',
                 cursor: 'pointer',
               }}
               onClick={() => setIndex(index - 1)}
             ></i>
-            <div
-              className='d-flex  flex-column  m-3 p-3 rounded shadow-lg p-3 mb-5 bg-dark rounded'
-              style={{
-                width: '40vw',
-                height: '30vw',
-                justifyContent: 'center',
-                alignContent: 'center',
-                alignItems: 'center',
-                background: '#444',
-              }}
-            >
-              <div className='d-flex flex-row '>
+            <Container alignContent='center' alignItems='center'>
+              <div className='d-flex flex-row justify-content-center  '>
                 {resumeData[index]?.logo?.map((bx) => (
-                  <i className={`${bx}`} style={{ fontSize: '100px' }}></i>
+                  <i className={`${bx}`} style={{ fontSize: '5rem' }}></i>
                 ))}
               </div>
-              {/* <i class={resumeData[index]?.logo}></i> */}
-              <h1 className=''>{resumeData[index]?.job}</h1>
-              <p className=''>{resumeData[index]?.workplace}</p>
-              <p className='bg-blue shadow-lg duration'>
+              <Typography variant='h5' align='center' className=''>
+                {resumeData[index]?.job}
+              </Typography>
+              <Typography variant='h6' align='center'>
+                {resumeData[index]?.workplace}
+              </Typography>
+              <Typography
+                variant='h6'
+                className='bg-blue shadow-lg duration'
+                align='center'
+              >
                 {resumeData[index]?.duration}
-              </p>
-              <p>{resumeData[index]?.description}</p>
-            </div>
+              </Typography>
+              <Typography variant='h6' align='center'>
+                {resumeData[index]?.description}
+              </Typography>
+              <div align='center'>
+                <Link to={`/about/${resumeData[index]?.id}`} align='center'>
+                  <Button variant='outlined' color='primary'>
+                    See More
+                  </Button>
+                </Link>
+              </div>
+            </Container>
             <i
-              class='bx bx-right-arrow ml-5'
+              class='bx bx-right-arrow'
               style={{
                 fontSize: '48px',
                 cursor: 'pointer',
               }}
               onClick={() => setIndex(index + 1)}
             ></i>
-          </div>
-        </div>
-      </div>
+          </Grid>
+        </Grid>
+      </Container>
     </>
   );
 };
