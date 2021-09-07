@@ -3,6 +3,7 @@ import Image from 'next/image';
 // import styles from '../styles/Home.module.css';
 import { socialMedia } from './data/profile';
 import Navbar from './page/navbar';
+import Footer from './page/footer';
 
 export default function Home() {
   return (
@@ -27,27 +28,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <Navbar />
+        <nav>
+          <Navbar />
+        </nav>
       </main>
+      <div className='mt-5'>
+        <h1>hello world for now</h1>
+      </div>
 
       <footer>
-        <div className='d-flex flex-row fixed-bottom bg-dark  justify-content-center'>
-          {socialMedia.map((social) => {
-            return (
-              <div key={social.id} className='d-flex flex-row m-2 '>
-                <a href={social.link}>
-                  <i
-                    className={social.iconClass}
-                    style={{
-                      fontSize: '48px',
-                      color: '#fff',
-                    }}
-                  ></i>
-                </a>
-              </div>
-            );
-          })}
-        </div>
+        <Footer />
       </footer>
     </div>
   );
