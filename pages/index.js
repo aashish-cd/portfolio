@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 // import styles from '../styles/Home.module.css';
-import { socialMedia } from './data/profile';
-import Navbar from './page/navbar';
-import Footer from './page/footer';
 
 export default function Home() {
   return (
@@ -27,18 +24,10 @@ export default function Home() {
         />
       </Head>
 
-      <main>
-        <nav>
-          <Navbar />
-        </nav>
-      </main>
+      <main></main>
       <div className='mt-5'>
         <h1>hello world for now</h1>
       </div>
-
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 }
