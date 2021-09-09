@@ -1,6 +1,5 @@
 import Head from 'next/head';
-// import Image from 'next/image';
-// import styles from '../styles/Home.module.css';
+import Index from './page';
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
         <title>Aashish Bhatt - React Developer</title>
         <meta
           name='description'
-          content='Portfolio of Aashish Bhatt | ERC | purwanchal campus | Computer Engineering '
+          content='Portfolio of Aashish Bhatt | ERC | purwanchal campus | Computer Engineering | Ace Studios | React Developer'
         />
         <link rel='icon' href='/favicon.ico' />
         <link
@@ -24,10 +23,9 @@ export default function Home() {
         />
       </Head>
 
-      <main></main>
-      <div className='mt-5'>
-        <h1>hello world for now</h1>
-      </div>
+      <main>
+        <Index />
+      </main>
     </div>
   );
 }

@@ -8,7 +8,7 @@ const Home = () => {
       <Container className='bg-dark p-4'>
         <Container maxWidth='md'>
           <div>
-            <Typography variant='h3' align='center' color='white' gutterBottom>
+            <Typography variant='h1' align='center' color='white' gutterBottom>
               {profileData[0].title}
             </Typography>
             <Typography variant='h5' align='center' color='white' paragraph>
